@@ -292,3 +292,25 @@
   height: 1em;
   border-color: #ff4c24;
 }
+.revalidateContainer {
+  margin: 20px 0;
+}
+.revalidateButton {
+  padding: 10px 15px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.revalidateButton:disabled {
+  background-color: #ccc;
+}
+.buildTime {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.error {
+  margin-top: 10px;
+  color: red;
+}

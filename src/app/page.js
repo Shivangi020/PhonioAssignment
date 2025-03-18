@@ -3,22 +3,25 @@ import Hero from "@/components/Hero";
 import styles from "./page.module.css";
 import CallNowButton from "@/components/VideoCall/CallNowButton";
 import Review from "@/components/Review";
-import HeroSection from "@/components/HeroSection/HeroSection";
+import RevalidateButton from "@/components/RevalidateButton";
 
-async function getData() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts/1", {
-    next: { revalidate: 5 * 60 * 60 }, // Revalidate every 5 hours
-  });
-  return res.json();
+function getServerBuildTime() {
+  const serverBuildTime = new Date().toISOString();
+
+  console.log(`[Server] Page built at: ${serverBuildTime}`);
+  return serverBuildTime;
 }
 
 export default function Home() {
+  const serverBuildTime = getServerBuildTime();
   return (
     <div className={styles.page}>
       <Hero />
-      {/* <HeroSection /> */}
+
       <CallNowButton />
       <Review />
+      <p>Server Build Time: {new Date(serverBuildTime).toLocaleString()}</p>
+      <RevalidateButton path="/" />
     </div>
   );
 }
