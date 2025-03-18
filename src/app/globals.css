@@ -1,6 +1,46 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-black: #000000;
+  --color-neutral-200: #efeeec;
+  --color-light: var(--color-neutral-200);
+  --color-dark: var(--color-neutral-800);
+  --container-padding: 2em;
+  --card--border-color: #efeeec14;
+  --card--background-color-active: #efeeec1a;
+  --gap-tiny: 0.5em;
+  --gap-small: 0.75em;
+  --gap-reg: 1em;
+  --gap-med: 1.25em;
+  --gap-large: 1.5em;
+  --gap-xlarge: 2em;
+  --gap-xxlarge: 3em;
+  --color-neutral-500: #818180;
+  --color-white: var(--color-neutral-100);
+  --color-neutral-900: black;
+  --color-neutral-300: #e3e1de;
+  --color-neutral-600: #2c2c2c;
+  --color-neutral-400: #cbc8c5;
+  --dash-side-width: 18.5em;
+  --color-neutral-800: #131313;
+  --dash-top-height: 6.5em;
+  --color-primary: #ff4c24;
+  --color-neutral-700: #1f1f1f;
+  --color-neutral-100: white;
+  --dash-col-gap: 1.5em;
+  --dash-col-width: 0em;
+  --dash-col-width-half: 0em;
+  --color-success: #0ba954;
+  --color-error: var(--color-primary);
+  --dash-content-width: 0em;
+  --dash-content-max-width: 65em;
+  --card--radius-reg: 0.75em;
+  --card--radius-small: 0.5em;
+  --card--background-color: #efeeec0f;
+  --gap-size: 1rem;
+  --dash-side-width-ignore: 18.5em;
+  --dash-side-width-collapsed: 5.5em;
+  --gap-component-grid: 0.75em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,15 +68,4 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
