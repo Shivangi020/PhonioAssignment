@@ -8,7 +8,13 @@ export default function CallNowButton() {
 
   return (
     <div className={styles.popup}>
-      <VideoCallPopup onClose={() => setShowPopup(false)} isOpen={showPopup} />
+      {showPopup && (
+        <VideoCallPopup
+          onClose={() => setShowPopup(false)}
+          roomName="demo-user"
+          participantName={"Customer"}
+        />
+      )}
       <button onClick={() => setShowPopup(true)} className={styles.joinCallBtn}>
         <IoCall />
         <span>Join Call</span>
