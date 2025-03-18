@@ -22,9 +22,7 @@ This project is a frontend assignment for Phonio, which involves UI cloning, Liv
    git clone https://github/Shivangi020/PhonioAssignmen/phonio-assignment.git
    cd phonio-assignment
 2. Install Dependecies
-  ```sh
     npm install
 3. Run and Open in brower 
-   ```sh
    npm run dev
    http://localhost:3000/
